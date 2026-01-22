@@ -27,8 +27,8 @@ author:
   name             : "Jiayi (Joyce) Zhang"
   pronouns         : # example: "she/her"  
   bio              : "Postdoctoral researcher"
-  location         : "Philadelphia"
-  employer         : "Worcester Polytechnic Institute"
+  location         : "Philadelphia, PA, USA"
+  employer         : "WPI"
   uri              : # URL
   email            : "jzhang31@wpi.edu" 
 
@@ -57,7 +57,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : #"bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/jzhang7718"
+  linkedin         : "https://www.linkedin.com/in/jzhang7718/"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
