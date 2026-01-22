@@ -13,7 +13,7 @@ title                    : "About"
 title_separator          : "-"
 name                     : &name "Joyce Zhang"
 description              : &description "Joyce's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://jz2655.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : "https://jz2655.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jz2655/jz2655.github.io"
@@ -23,12 +23,12 @@ repository               : "jz2655/jz2655.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/profile.png"
+  avatar           : "profile.png"
   name             : "Jiayi (Joyce) Zhang"
   pronouns         : # example: "she/her"  
-  bio              : "Postdoctoral researcher"
+  bio              : "Postdoctoral researcher at WPI"
   location         : "Philadelphia, PA, USA"
-  employer         : "WPI"
+  employer         : #"WPI"
   uri              : # URL
   email            : "jzhang31@wpi.edu" 
 
