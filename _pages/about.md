@@ -9,7 +9,6 @@ redirect_from:
 <!---Welcome to my website!
 --->
 
-==
 I am a post-doctoral researcher in the Computer Science Department at Worcester Polytechnic Institute, working with [Dr. Neil Heffernan](https://www.wpi.edu/people/faculty/nth). Prior to this, I earned my PhD from the [University of Pennsylvania](https://www.gse.upenn.edu/academics/learning-sciences-and-technologies-phd), where I was advised by [Dr. Ryan Baker](https://learninganalytics.upenn.edu/ryanbaker/).
 
 My research investigates how artificial intelligence can be leveraged efficiently and responsibly to facilitate learning and improve learning outcomes and experiences through data-driven approaches. I specialize in developing scalable and robust methods that model and measure students’ complex learning behaviors and processes, including affect, engagement, and self-regulated learning strategies.
