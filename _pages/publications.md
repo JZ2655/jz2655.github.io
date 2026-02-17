@@ -5,7 +5,9 @@ permalink: /publications/
 author_profile: true
 ---
 
-All papers are publicly available at my [Google Scholar](https://scholar.google.com/citations?user=wsmdU28AAAAJ&hl=en) page.
+All papers are publicly available at my
+<a href="https://scholar.google.com/citations?user=wsmdU28AAAAJ&hl=en">Google Scholar</a> page.
+
 
 ## Journal Articles
 
