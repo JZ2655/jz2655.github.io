@@ -5,9 +5,9 @@ permalink: /publications/
 author_profile: true
 ---
 
-All papers are publicly available at my [Google Scholar] (https://scholar.google.com/citations?user=wsmdU28AAAAJ&hl=en) page.
+All papers are publicly available at my [Google Scholar](https://scholar.google.com/citations?user=wsmdU28AAAAJ&hl=en) page.
 
-## Journal Articles
+# Journal Articles
 <div style="font-size:0.9em;">
 
 -   Zambrano, A., Wei, Z., **Zhang, J.**, Baker, R., Ocumpaugh, J.,
@@ -40,9 +40,9 @@ All papers are publicly available at my [Google Scholar] (https://scholar.google
 
 </div>
 
-## Conference Papers
+# Conference Papers
 
-### 2026
+## 2026
 <div style="font-size:0.9em;">
 
 -   **Zhang, J.**, Borchers, C., Wang, C., Kumar, V., Teffera, L.,
@@ -71,7 +71,7 @@ All papers are publicly available at my [Google Scholar] (https://scholar.google
     
     </div>
 
-### 2025
+## 2025
 <div style="font-size:0.9em;">
 
 -   **Zhang, J.**, Baker, R. S., Srivastava, N., Ocumpaugh, J., Mills,
@@ -110,7 +110,7 @@ All papers are publicly available at my [Google Scholar] (https://scholar.google
     
     </div>
 
-### 2024
+## 2024
 <div style="font-size:0.9em;">
 
 -   **Zhang, J.**, Borchers, C., Aleven, V., & Baker, R. S. (2024).
@@ -161,7 +161,7 @@ All papers are publicly available at my [Google Scholar] (https://scholar.google
     
     </div>
 
-### 2023
+## 2023
 <div style="font-size:0.9em;">
 
 -   **Zhang, J.**, Baker, R. S., Andres, J. A., Hutt, S., &
@@ -192,7 +192,7 @@ All papers are publicly available at my [Google Scholar] (https://scholar.google
     
     </div>
 
-### 2022
+## 2022
 <div style="font-size:0.9em;">
 
 -   **Zhang, J.**, Andres, J. M. A. L., Hutt, S., Baker, R. S.,
@@ -224,7 +224,7 @@ All papers are publicly available at my [Google Scholar] (https://scholar.google
     
     </div>
 
-### 2021
+## 2021
 <div style="font-size:0.9em;">
 
 -   **Zhang, J.**, Das, R., Baker, R. S., & Scruggs, R. (2021).
