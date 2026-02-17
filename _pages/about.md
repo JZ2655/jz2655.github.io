@@ -6,7 +6,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Welcome to my website!
+<!---Welcome to my website!
+--->
+
 ==
 I am a post-doctoral researcher in the Computer Science Department at Worcester Polytechnic Institute, working with [Dr. Neil Heffernan](https://www.wpi.edu/people/faculty/nth). Prior to this, I earned my PhD from the [University of Pennsylvania](https://www.gse.upenn.edu/academics/learning-sciences-and-technologies-phd), where I was advised by [Dr. Ryan Baker](https://learninganalytics.upenn.edu/ryanbaker/).
 
