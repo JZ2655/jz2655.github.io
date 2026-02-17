@@ -5,9 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
-All papers are publicly available at my [https://scholar.google.com/citations?user=wsmdU28AAAAJ&hl=en) page.
+All papers are publicly available at my [Google Scholar] (https://scholar.google.com/citations?user=wsmdU28AAAAJ&hl=en) page.
 
-### Journal Articles
+## Journal Articles
+<div style="font-size:0.9em;">
 
 -   Zambrano, A., Wei, Z., **Zhang, J.**, Baker, R., Ocumpaugh, J.,
     Barany, A., Liu, X., Zhou, Y., Paquette, L., Ginger, J., &
@@ -37,9 +38,12 @@ All papers are publicly available at my [https://scholar.google.com/citations?us
     Problem-Solving Process. *Journal of Educational Data Mining*,
     14(3), 76–108.
 
-### Conference Papers
+</div>
 
-#### 2026
+## Conference Papers
+
+### 2026
+<div style="font-size:0.9em;">
 
 -   **Zhang, J.**, Borchers, C., Wang, C., Kumar, V., Teffera, L.,
     McLaren, B., & Baker, R. S. (accepted). Understanding Gaming the
@@ -64,8 +68,11 @@ All papers are publicly available at my [https://scholar.google.com/citations?us
     Baker, R. S., Botelho, A. (2026). A Tale of Two Models: Leveraging
     Self-Explanation to Contextualize Divergent Models of Student
     Carelessness. OSF.
+    
+    </div>
 
-#### 2025
+### 2025
+<div style="font-size:0.9em;">
 
 -   **Zhang, J.**, Baker, R. S., Srivastava, N., Ocumpaugh, J., Mills,
     C., & McLaren, B. M. (2025). Carelessness detection using
@@ -100,8 +107,11 @@ All papers are publicly available at my [https://scholar.google.com/citations?us
     Henkel, O. (2025). Keeping Students in their Zone of Proximal
     Development: A Machine Learning Approach for Intelligent Tutoring
     Systems. OSF.
+    
+    </div>
 
-#### 2024
+### 2024
+<div style="font-size:0.9em;">
 
 -   **Zhang, J.**, Borchers, C., Aleven, V., & Baker, R. S. (2024).
     Using large language models to detect self-regulated learning in
@@ -148,8 +158,11 @@ All papers are publicly available at my [https://scholar.google.com/citations?us
     Bright, D., … & Baker, R. S. (2024). ChatGPT for education research:
     Exploring the potential of large language models for qualitative
     codebook development. *AIED*.
+    
+    </div>
 
-#### 2023
+### 2023
+<div style="font-size:0.9em;">
 
 -   **Zhang, J.**, Baker, R. S., Andres, J. A., Hutt, S., &
     Sethuraman, S. (2023). Automated Multi-Dimensional Analysis of Peer
@@ -176,8 +189,11 @@ All papers are publicly available at my [https://scholar.google.com/citations?us
 -   Andres, J. M., Baker, R. S., Hutt, S. J., Mills, C., **Zhang, J.**,
     Rhodes, S., & DePiro, A. (2023). Anxiety, achievement, and
     self-regulated learning in CueThink. *ISLS*.
+    
+    </div>
 
-#### 2022
+### 2022
+<div style="font-size:0.9em;">
 
 -   **Zhang, J.**, Andres, J. M. A. L., Hutt, S., Baker, R. S.,
     Ocumpaugh, J., Mills, C., Brooks, J., Sethuraman, S., & Young, T.
@@ -205,8 +221,11 @@ All papers are publicly available at my [https://scholar.google.com/citations?us
 -   He, M., Baker, R., Hutt, S., & **Zhang, J.** (2022). A Less
     Overconservative Method for Reliability Estimation for Cohen’s
     Kappa.
+    
+    </div>
 
-#### 2021
+### 2021
+<div style="font-size:0.9em;">
 
 -   **Zhang, J.**, Das, R., Baker, R. S., & Scruggs, R. (2021).
     Knowledge Tracing Models’ Predictive Performance when a Student
@@ -217,3 +236,5 @@ All papers are publicly available at my [https://scholar.google.com/citations?us
     R., Mogessie, M., … & McLaren, B. M. (2021). Gaming and confusion
     explain learning advantages for a math digital learning game.
     *AIED*. **\[Nominated for Best Paper Award\]**
+    
+    </div>
