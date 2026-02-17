@@ -14,28 +14,33 @@ All papers are publicly available at my [Google Scholar](https://scholar.google.
     Borchers, C. (2025). Data Plus Theory Equals Codebook: Leveraging
     LLMs for Human-AI Codebook Development. *Journal of Educational Data
     Mining*.
+    [Link](https://jedm.educationaldatamining.org/index.php/JEDM/article/view/1001)
 
 -   Borchers, C., **Zhang, J.**, Fleischer, H., Schanze, S., Aleven, V.,
     & Baker, R. S. (2025). Large Language Models Generalize SRL
     Prediction to New Languages Within But Not Between Domains. *Journal
     of Educational Data Mining*.
+    [Link](https://eric.ed.gov/?id=EJ1483240)
 
 -   Liu, X., Zambrano, A. F., Baker, R. S., Barany, A., Ocumpaugh, J.,
     **Zhang, J.**, Pankiewicz, M., Nasiar, N., & Wei, Z. (2025).
     Qualitative Coding with GPT-4: Where It Works Better. *Journal of
     Learning Analytics*, 12(1), 169–185.
+    [Link](https://eric.ed.gov/?id=EJ1465623)
 
 -   Baker, R. S., Richey, J. E., **Zhang, J.**, Karumbaiah, S.,
     Andres-Bray, J. M., Nguyen, H. A., Andres, J. M. A. L., &
     McLaren, B. M. (2024). Gaming the system mediates the relationship
     between gender and learning outcomes in a digital learning game.
     *Instructional Science*, 1–36.
+    [Link](https://link.springer.com/article/10.1007/s11251-024-09679-3)
 
 -   **Zhang, J.**, Andres, J. M. A. L., Hutt, S., Baker, R. S.,
     Ocumpaugh, J., Nasiar, N., … & Young, T. (2022). Using Machine
     Learning to Detect SMART Model Cognitive Operations in Mathematical
     Problem-Solving Process. *Journal of Educational Data Mining*,
     14(3), 76–108.
+    [Link](https://jedm.educationaldatamining.org/index.php/JEDM/article/view/610)
 
 ## Conference Papers
 
