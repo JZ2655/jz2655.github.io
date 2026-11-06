@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🎓%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Jiayi (Joyce) Zhang">
+<meta property="og:description" content="Postdoctoral researcher in learning sciences, educational data science, and AI in education at Worcester Polytechnic Institute.">
+<meta property="og:type" content="website">
+<title>Jiayi (Joyce) Zhang</title>
+<meta name="description" content="Postdoctoral researcher in learning sciences, educational data science, and AI in education at Worcester Polytechnic Institute.">
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --muted: #484850;
+  --rule: #e4e4e7;
+  --link: #0b4a77;
+  --link-hover: #06304f;
+  --soft: #f5f6f8;
+  --award: #8a4b00;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131417; --text: #f7f7f9; --muted: #a0a0a8; --rule: #2b2c31;
+    --link: #8cc2ee; --link-hover: #b9dcf7; --soft: #1c1d22; --award: #e8b266;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #131417; --text: #f7f7f9; --muted: #a0a0a8; --rule: #2b2c31;
+  --link: #8cc2ee; --link-hover: #b9dcf7; --soft: #1c1d22; --award: #e8b266;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { height: 100%; scroll-padding-top: env(safe-area-inset-top, 0px); }
+body {
+  margin: 0; min-height: 100%;
+  background: var(--bg); color: var(--text);
+  font-family: "Times New Roman", Times, "Liberation Serif", serif;
+  font-size: 18px; line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); background: var(--bg); z-index: 10; }
+a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { color: var(--link-hover); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 2px; }
+
+/* top nav */
+.topbar { border-bottom: 1px solid var(--rule); }
+.topbar nav { max-width: 1120px; margin: 0 auto; padding: 18px 28px; display: flex; justify-content: flex-end; gap: 28px; flex-wrap: wrap; }
+.topbar a { color: var(--text); text-decoration: none; font-size: 17px; padding-bottom: 2px; border-bottom: 1px solid transparent; }
+.topbar a:hover { border-bottom-color: var(--muted); }
+.topbar a[aria-current="page"] { border-bottom-color: var(--text); }
+
+/* layout */
+.page { max-width: 1120px; margin: 0 auto; padding: 36px 28px 64px; display: grid; grid-template-columns: 250px minmax(0, 1fr); column-gap: 48px; }
+aside.id { font-size: 16px; line-height: 1.35; }
+aside.id img.portrait { display: block; width: 180px; height: auto; aspect-ratio: 4 / 5; object-fit: cover; margin-bottom: 18px; }
+aside.id .name { font-weight: 700; font-size: 17px; margin: 0 0 8px; }
+aside.id p { margin: 0; }
+aside.id .contact { margin-top: 16px; }
+.icons { display: flex; gap: 16px; margin-top: 18px; padding: 0; list-style: none; }
+.icons a { display: inline-flex; color: var(--text); }
+.icons a:hover { color: var(--link); }
+.icons svg { width: 22px; height: 22px; fill: currentColor; }
+
+main { min-width: 0; }
+.view[hidden] { display: none; }
+.kicker { font-size: 15px; color: var(--muted); margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.15; margin: 0 0 12px; font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 22px; line-height: 1.3; margin: 40px 0 14px; font-weight: 700; letter-spacing: -0.005em; }
+h2:first-child { margin-top: 0; }
+h3 { font-size: 17px; margin: 24px 0 6px; font-weight: 700; }
+p { margin: 0 0 9px; max-width: 92ch; }
+
+/* about */
+.areas { display: grid; grid-template-columns: minmax(200px, 270px) minmax(0, 1fr); gap: 22px; align-items: center; margin: 0 0 16px; }
+.areas img { width: 100%; height: auto; display: block; background: #fff; border-radius: 6px; }
+.areas ol { margin: 0; padding: 0 0 0 28px; border-left: 1px solid var(--rule); list-style: none; counter-reset: a; }
+.areas li { counter-increment: a; position: relative; padding: 2px 0 2px 30px; }
+.areas li::before { content: counter(a) "."; position: absolute; left: 0; color: var(--muted); }
+.highlights { border-top: 1px solid var(--rule); margin-top: 8px; padding-top: 22px; }
+.highlights h2 { font-size: 17px; text-align: right; margin: 0 0 8px; }
+.highlights ul { list-style: none; margin: 0; padding: 0; text-align: right; font-size: 16px; line-height: 1.35; }
+.highlights li { margin: 0 0 1px; }
+
+/* research */
+.area { border-top: 1px solid var(--rule); padding: 22px 0 6px; display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 0 12px; }
+.area:first-of-type { border-top: 0; padding-top: 0; }
+.area .n { font-size: 15px; color: var(--muted); padding-top: 4px; }
+.area h3 { margin-top: 0; font-size: 19px; }
+.area p { margin-bottom: 14px; }
+.tag { font-size: 15px; color: var(--muted); }
+
+/* lists */
+.entries { list-style: none; margin: 0 0 8px; padding: 0; }
+.entries li { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 24px; padding: 7px 0; }
+.entries .when { color: var(--muted); font-size: 15px; font-style: italic; white-space: nowrap; text-align: right; }
+.entries .sub { grid-column: 1; color: var(--muted); font-size: 15px; }
+.metrics { display: flex; flex-wrap: wrap; gap: 8px 36px; margin: 0 0 8px; padding: 14px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.metrics div { font-size: 15px; color: var(--muted); }
+.metrics strong { display: block; font-size: 24px; line-height: 1.2; color: var(--text); font-weight: 700; }
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pubs li { display: list-item; list-style: none; position: relative; padding: 9px 0 9px 54px; font-size: 15.5px; line-height: 1.5; border-bottom: 1px solid var(--rule); }
+.pubs li::before { position: absolute; left: 0; top: 10px; color: var(--muted); font-size: 14px; }
+.pubs li::before { content: attr(data-n); }
+.pubs li:last-child { border-bottom: 0; }
+.award { display: inline-block; margin-left: 4px; font-size: 14px; font-weight: 600; color: var(--award); }
+.note { color: var(--muted); font-size: 15px; }
+
+.entries.tight li { padding: 1px 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.cv-link { margin: 0 0 10px; font-size: 16px; }
+.cv-embed { display: block; width: 100%; height: 82vh; min-height: 560px; border: 1px solid var(--rule); border-radius: 4px; background: var(--soft); }
+.cv-embed p { padding: 16px; }
+.cv-pages img { display: block; width: 100%; height: auto; background: #fff; border: 1px solid var(--rule); margin: 0 0 14px; }
+.cv-link button { font: inherit; font-size: 16px; color: var(--link); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.cv-link button:hover { color: var(--link-hover); }
+/* about: tighter bio spacing */
+[data-view="about"] > p { line-height: 1.3; margin-bottom: 9px; }
+[data-view="about"] .areas li { line-height: 1.3; padding-top: 0; padding-bottom: 0; margin-bottom: 9px; }
+[data-view="about"] .areas li:last-child { margin-bottom: 0; }
+/* teaching: smaller text */
+[data-view="teaching"] .entries li { font-size: 16px; }
+[data-view="teaching"] .entries .when, [data-view="teaching"] .entries .sub { font-size: 14px; }
+/* research: same spacing rules (line spacing 1.3, 9px between paragraphs and list items) */
+[data-view="research"] p { line-height: 1.3; margin-bottom: 9px; }
+[data-view="research"] p.grp { margin: 10px 0 4px; }
+[data-view="research"] .tier .sub, [data-view="research"] .tier .ttl { line-height: 1.3; }
+[data-view="research"] .sel { line-height: 1.3; }
+[data-view="research"] .sel li { margin-bottom: 9px; }
+[data-view="research"] .sel li:last-child { margin-bottom: 0; }
+/* research: goal figure + collapsible tiers */
+.goal-wrap { margin: 0 0 18px; }
+.goal { display: block; width: 100%; height: auto; background: #fff; border-radius: 6px; }
+.tiers { border-top: 1px solid var(--rule); }
+.tier { border-bottom: 1px solid var(--rule); }
+.tier summary { cursor: pointer; list-style: none; display: flex; align-items: flex-start; gap: 14px; padding: 12px 2px; }
+.tier summary::-webkit-details-marker { display: none; }
+.tier summary::before { content: ""; flex: none; width: 8px; height: 8px; margin-top: 9px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(-45deg); transition: transform .15s ease; }
+.tier[open] > summary::before { transform: rotate(45deg); }
+.tier summary:hover .ttl { text-decoration: underline; text-underline-offset: 3px; }
+.tier .st { display: flex; flex-direction: column; }
+.tier .ttl { font-weight: 700; font-size: 19px; line-height: 1.3; }
+.tier .sub { color: var(--muted); font-size: 16px; line-height: 1.35; }
+.tier .body { padding: 2px 2px 14px 24px; }
+.tier .body h3 { font-size: 16px; margin: 12px 0 4px; }
+.sel { margin: 0; padding-left: 20px; font-size: 16.5px; line-height: 1.4; }
+.sel li { margin: 0 0 4px; }
+.grp { font-weight: 700; font-style: italic; font-size: 16px; margin: 10px 0 2px; }
+@media (prefers-reduced-motion: reduce) { .tier summary::before { transition: none; } }
+@media (max-width: 640px) { .goal-wrap { overflow-x: auto; } .goal { min-width: 640px; } }
+@media (max-width: 860px) {
+  body { font-size: 17px; }
+  .topbar nav { justify-content: flex-start; padding: 14px 20px; gap: 20px; }
+  .page { grid-template-columns: 1fr; padding: 26px 20px 48px; row-gap: 32px; }
+  aside.id { display: grid; grid-template-columns: 120px minmax(0, 1fr); column-gap: 18px; align-items: start; }
+  aside.id img.portrait { width: 120px; margin: 0; grid-row: 1 / span 3; }
+  .icons { margin-top: 12px; }
+  h1 { font-size: 27px; }
+  .areas { grid-template-columns: 1fr; }
+  .areas img { max-width: 300px; }
+  .highlights h2, .highlights ul { text-align: left; }
+  .entries li { grid-template-columns: 1fr; }
+  .entries .when { text-align: left; }
+  .area { grid-template-columns: 1fr; }
+  .area .n { display: none; }
+}
+@media (max-width: 460px) {
+  .topbar nav { gap: 14px; padding: 14px 16px; }
+  .topbar a { font-size: 16px; }
+  aside.id { grid-template-columns: 96px minmax(0, 1fr); }
+  aside.id img.portrait { width: 96px; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <nav aria-label="Primary">
+    <a href="#about" data-nav="about">About</a>
+    <a href="#research" data-nav="research">Research</a>
+    <a href="#publication" data-nav="publication">Publication</a>
+    <a href="#teaching" data-nav="teaching">Teaching</a>
+    <a href="#cv" data-nav="cv">CV</a>
+  </nav>
+</header>
+
+<div class="page">
+  <aside class="id">
+    <img class="portrait" src="images/profile.jpg" alt="Portrait of Jiayi (Joyce) Zhang">
+    <div>
+      <p class="name">Jiayi (Joyce) Zhang</p>
+      <p>Postdoctoral research scientist<br>Department of Computer Science<br>Worcester Polytechnic Institute</p>
+      <p class="contact"><a href="mailto:jzhang31@wpi.edu">jzhang31@wpi.edu</a></p>
+      <ul class="icons">
+        <li><a href="https://scholar.google.com/citations?user=wsmdU28AAAAJ" aria-label="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 1 9l11 7 9-5.7V17h2V9L12 2zM5 13.2v3.6c0 1.8 3.1 3.7 7 3.7s7-1.9 7-3.7v-3.6l-7 4.4-7-4.4z"/></svg></a></li>
+        <!-- Replace each "#" with your own profile URL -->
+        <li><a href="https://orcid.org/0000-0002-7334-4256" aria-label="ORCID"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg></a></li>
+        <li><a href="https://github.com/JZ2655" aria-label="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></li>
+        <li><a href="https://www.linkedin.com/in/jzhang7718/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main id="main">
+
+    <!-- ABOUT -->
+    <section class="view" data-view="about" aria-labelledby="h-about">
+      <p class="kicker">Learning Sciences · Educational Data Science · AI in Education</p>
+      <h1 id="h-about">Jiayi (Joyce) Zhang</h1>
+      <p>I am a postdoctoral researcher in the Department of Computer Science at <a href="https://www.wpi.edu/">Worcester Polytechnic Institute (WPI)</a>, working with <a href="https://www.wpi.edu/people/faculty/nth">Neil Heffernan</a> and <a href="https://www.assistments.org/">ASSISTments</a>. Prior to this, I earned my Ph.D. in <a href="https://www.gse.upenn.edu/academics/learning-sciences-and-technologies-phd">Learning Sciences and Technologies</a> from the University of Pennsylvania, where I was supervised by <a href="https://ryanbaker.c3l.ai/ryanbaker/index.html">Ryan Baker</a>, and my M.A. in <a href="https://www.tc.columbia.edu/human-development/cognitive-studies-in-education/">Cognitive Science in Education</a> from Teachers College, Columbia University.</p>
+      <p>My research lies at the intersection of learning sciences, cognitive science, educational data science, and artificial intelligence (AI). I use data-driven approaches to visualize and understand student learning in digital learning environments. My work spans three interconnected areas:</p>
+      <div class="areas">
+        <img src="images/student-learning-pyramid.png" alt="Pyramid with three layers. Top: Student Modeling, to measure and understand student learning behaviors and processes. Middle: AI as a Methodology, to investigate the capabilities, performance, and limitations of AI and LLMs for modeling learning. Bottom: Datasets and Benchmarks, to curate and enrich educational datasets and develop benchmarks that support model development and evaluation.">
+        <ol>
+          <li><strong>Developing computational models</strong> to measure and understand student learning behaviors and processes;</li>
+          <li><strong>Evaluating AI</strong> as a methodological tool for student modeling, and</li>
+          <li><strong>Building datasets and benchmarks</strong> for model development and evaluation.</li>
+        </ol>
+      </div>
+      <div class="highlights">
+        <h2>Recent Highlights</h2>
+        <ul>
+          <li>Serving as Publication Co-Chair for the Educational Data Mining conference (2027)</li>
+          <li>Co-PI on an NSF award to curate a multimodal dataset to study mathematical misconceptions (<a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2621434">link</a>) (2026)</li>
+          <li>Our <a href="#publication">paper on children’s AI literacy books</a> won Best Student Paper at AIED (2026)</li>
+          <li>Guest lectures on text analytics at UVA and GenAI for research at the University of Houston (09/2026)</li>
+          <li>Taught in Penn’s Learning Analytics capstone seminar and continued mentoring student projects (Summer 2026)</li>
+          <li>Joined ASSISTments at WPI as a postdoctoral researcher (01/2026)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="view" data-view="research" aria-labelledby="h-research" hidden>
+      <h1 id="h-research">Research</h1>
+      <div class="goal-wrap">
+        <img class="goal" src="images/research-goal.jpg" alt="Research goal: develop and evaluate computational and AI-based approaches to measure and understand student learning, with the broader goal of informing instructional practices and the design of learning technologies. Three layers: Student Modeling, AI as a Methodology, and Datasets and Benchmarks, each with its own list of aims.">
+      </div>
+
+      <div class="tiers">
+        <details class="tier">
+          <summary><span class="st"><span class="ttl">1. Student modeling</span><span class="sub">Measure and understand student learning behaviors and processes</span></span></summary>
+          <div class="body">
+            <p>Learning is often a latent process: knowledge, engagement, and cognitive and metacognitive processes are difficult to observe directly. Without knowing what students know, how they feel, what they think, and where they struggle or disengage, it is hard to provide the scaffolding and support that facilitate learning.</p>
+            <p>This line of research therefore asks how data can be used to measure and model these aspects of learning, so that they become visible and actionable for understanding learning and informing adaptive support.</p>
+            <p>To this end, I have built and improved computational models that assess knowledge, engagement (e.g., gaming the system, carelessness), and cognitive and metacognitive processes (e.g., self-regulated learning and socially shared regulation of learning) from log, textual, or multimodal data across digital learning platforms and intelligent tutoring systems. I evaluate these models for robustness, fairness, and generalizability.</p>
+            <p>I also examine how the measured behaviors and processes relate to other factors, such as instructional support, learning gains, and motivation, to advance theoretical understanding of learning and generate insights for instructional support.</p>
+            <h3>Selected publications</h3>
+            <p class="grp">Measure</p>
+            <ul class="sel">
+              <li><a href="#publication">Using Machine Learning to Detect SMART Model Cognitive Operations in Mathematical Problem-Solving Process</a> (JEDM 2022)</li>
+              <li><a href="#publication">Using Large Language Models to Detect Self-Regulated Learning in Think-Aloud Protocols</a> (EDM 2024)</li>
+              <li><a href="#publication">Using Large Language Models to Detect Socially Shared Regulation of Learning in Collaborative Learning</a> (LAK 2026)</li>
+              <li><a href="#publication">Carelessness Detection Using Performance Factor Analysis: A New Operationalization with Unexpectedly Different Relationship to Learning</a> (CSTE 2025)</li>
+              <li><a href="#publication">LLM-Based Approaches for Detecting Gaming the System in Self-Explanation</a> (AIME-Con 2025)</li>
+              <li><a href="#publication">Knowledge Tracing Models’ Predictive Performance when a Student Starts a Skill</a> (EDM 2021)</li>
+            </ul>
+            <p class="grp">Understand</p>
+            <ul class="sel">
+              <li><a href="#publication">Understanding Gaming the System through Analyzing Self-Regulated Learning in Think-Aloud Protocols</a> (LAK 2026)</li>
+              <li><a href="#publication">How Much Mastery Is Enough Mastery? The Relationship Between Mastery in a Lesson and the Performance on the Subsequent Lesson</a> (EDM 2025)</li>
+              <li><a href="#publication">Using Think-Aloud Data to Understand Relations between Self-Regulation Cycle Characteristics and Student Performance in Intelligent Tutoring Systems</a> (LAK 2024)</li>
+              <li><a href="#publication">Studying the Interplay of Self-Regulated Learning Cycles and Scaffolding Through Ordered Network Analysis Across Three Tutoring Systems</a> (ICQE 2024)</li>
+              <li><a href="#publication">Gaming and Confrustion Explain Learning Advantages for a Math Digital Learning Game</a> (AIED 2021)</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="tier">
+          <summary><span class="st"><span class="ttl">2. AI as a methodology</span><span class="sub">Investigate the capabilities, performance, and limitations of AI/LLMs for modeling learning</span></span></summary>
+          <div class="body">
+            <p>Many learning processes have traditionally depended on labor-intensive qualitative coding and annotation, which limits the scale at which they can be studied. This line of research asks when and how large language models can support qualitative coding, annotation, and codebook development in ways that are valid, reliable, and theoretically grounded, and which factors determine the quality and feasibility of AI-assisted qualitative research.</p>
+            <h3>Selected publications</h3>
+            <p class="grp">Qualitative coding</p>
+            <ul class="sel">
+              <li><a href="#publication">Assessing the Potential and Limits of Large Language Models in Qualitative Coding</a> (ICQE 2024)</li>
+              <li><a href="#publication">Scaffolding Human-LLM Qualitative Coding Through Inference Evaluation and Construct Boundaries</a> (ICQE 2026)</li>
+              <li><a href="#publication">Qualitative Coding with GPT-4: Where It Works Better</a> (JLA 2025)</li>
+            </ul>
+            <p class="grp">Codebook development</p>
+            <ul class="sel">
+              <li><a href="#publication">Data Plus Theory Equals Codebook: Leveraging LLMs for Human-AI Codebook Development</a> (JEDM 2025)</li>
+              <li><a href="#publication">ChatGPT for Education Research: Exploring the Potential of Large Language Models for Qualitative Codebook Development</a> (AIED 2024)</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="tier">
+          <summary><span class="st"><span class="ttl">3. Datasets &amp; benchmarks</span><span class="sub">Curate and enrich educational datasets and develop benchmarks to support model development and evaluation</span></span></summary>
+          <div class="body">
+            <p>Better AI models and research methods depend on the quality and richness of educational data, and on infrastructure that lets those data be accessed and reused responsibly. This line of research asks how existing data can be enriched, and how datasets and benchmarks can be curated and shared to serve researchers, educators, technologists, and AI developers. I am Co-PI on an NSF-funded effort to curate a large-scale multimodal dataset of middle-school mathematics learning in ASSISTments, and I contribute to SafeInsights, a privacy-preserving research infrastructure.</p>
+            <h3>Selected work</h3>
+            <ul class="sel">
+              <li><a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2621434">Curating a Large-Scale Publicly Available Multimodal Dataset of Student Actions in Illustrative Math to Study Mathematical Misconceptions</a> (NSF Award #2621434, 2026–2029)</li>
+              <li><a href="#publication">A Case Study Reexamining the Cold-Start Problem in Knowledge Tracing Models and Implications for SafeInsights</a> (PELE at L@S 2026)</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- PUBLICATION -->
+    <section class="view" data-view="publication" aria-labelledby="h-pub" hidden>
+      <h1 id="h-pub">Publications</h1>
+      <div class="metrics" role="group" aria-label="Citation metrics">
+        <div><strong>50</strong>publications</div>
+        <div><strong>748</strong>citations</div>
+        <div><strong>12</strong>h-index</div>
+        <div><strong>18</strong>i10-index</div>
+      </div>
+      <p class="note">Source: <a href="https://scholar.google.com/citations?user=wsmdU28AAAAJ">Google Scholar</a>, as of September 27, 2026.</p>
+
+      <h2>Journal articles</h2>
+      <!-- ADD A PAPER: copy any <li> below and paste it at the TOP of this list. The [J.n] / [C.n] numbers are added automatically. -->
+      <ol class="pubs journal">
+        <li>Zambrano, A., Wei, Z., <strong>Zhang, J.</strong>, Baker, R., Ocumpaugh, J., Barany, A., Liu, X., Zhou, Y., Paquette, L., Ginger, J., &amp; Borchers, C. (2025). Data Plus Theory Equals Codebook: Leveraging LLMs for Human-AI Codebook Development. <em>Journal of Educational Data Mining</em>.</li>
+        <li>Borchers, C., <strong>Zhang, J.</strong>, Fleischer, H., Schanze, S., Aleven, V., &amp; Baker, R. S. (2025). Large Language Models Generalize SRL Prediction to New Languages Within But Not Between Domains. <em>Journal of Educational Data Mining</em>.</li>
+        <li>Liu, X., Zambrano, A. F., Baker, R. S., Barany, A., Ocumpaugh, J., <strong>Zhang, J.</strong>, Pankiewicz, M., Nasiar, N., &amp; Wei, Z. (2025). Qualitative Coding with GPT-4: Where It Works Better. <em>Journal of Learning Analytics, 12</em>(1), 169–185.</li>
+        <li>Baker, R. S., Richey, J. E., <strong>Zhang, J.</strong>, Karumbaiah, S., Andres-Bray, J. M., Nguyen, H. A., Andres, J. M. A. L., &amp; McLaren, B. M. (2024). Gaming the system mediates the relationship between gender and learning outcomes in a digital learning game. <em>Instructional Science</em>, 1–36.</li>
+        <li><strong>Zhang, J.</strong>, Andres, J. M. A. L., Hutt, S., Baker, R. S., Ocumpaugh, J., Nasiar, N., … &amp; Young, T. (2022). Using Machine Learning to Detect SMART Model Cognitive Operations in Mathematical Problem-Solving Process. <em>Journal of Educational Data Mining, 14</em>(3), 76–108.</li>
+      </ol>
+
+      <h2>Conference papers</h2>
+      <!-- ADD A PAPER: copy any <li> below and paste it at the TOP of this list. The [J.n] / [C.n] numbers are added automatically. -->
+      <ol class="pubs conf">
+        <li><strong>Zhang, J.</strong>, Borchers, C., Wang, C., Kumar, V., Teffera, L., McLaren, B., &amp; Baker, R. S. (2026). Understanding Gaming the System through Analyzing Self-Regulated Learning in Think-Aloud Protocols. In <em>Proceedings of the Learning Analytics and Knowledge Conference (LAK)</em>.</li>
+        <li><strong>Zhang, J.</strong>, Borchers, C., Cohn, C., Srivastava, N., Snyder, C., Guo, S., T S, A., Mohammed, N., Noh, H., &amp; Biswas, G. (2026). Using Large Language Models to Detect Socially Shared Regulation of Learning in Collaborative Learning. In <em>Proceedings of the Learning Analytics and Knowledge Conference (LAK)</em>.</li>
+        <li><strong>Zhang, J.</strong>, Baker, R. S., Mallick, D. B., Heffernan, C., &amp; Heffernan, N. (2026). A Case Study Reexamining the Cold-Start Problem in Knowledge Tracing Models and Implications for SafeInsights, an Education Research Infrastructure. The Seventh Annual Workshop on A/B Testing and Platform-Enabled Learning Engineering (PELE) at Learning@Scale. arXiv:2606.11004.</li>
+        <li>Zambrano, A., <strong>Zhang, J.</strong>, Pankiewicz, M., &amp; Baker, R. S. (2026). Practice as the Key to Success: Understanding the Role of Prior Knowledge, Affective States and Learning Resources in Computer Science Education. In <em>Proceedings of the Learning Analytics and Knowledge Conference (LAK)</em>.</li>
+        <li>Wu, M., <strong>Zhang, J.</strong>, Zhang, R. Z. (2026). Decoding Human and AI Persuasion in National College Debate: Analyzing Prepared Arguments Through Aristotle’s Rhetorical Principles. <em>American Educational Research Association (AERA)</em>.</li>
+        <li>Xiao, F., <strong>Zhang, J.</strong>, Zambrano, A., &amp; Jiang, S. (2026). What Children’s AI Literacy Books Teach About Artificial Intelligence: A Content Analysis Using the AI4K12 Framework. <em>Proceedings of the International Conference on Artificial Intelligence in Education (AIED)</em>. <span class="award">Best Student Paper Award</span></li>
+        <li>Borchers, C., <strong>Zhang, J.</strong>, &amp; Gurung, A. (2026). Representation Learning to Study Temporal Dynamics in Tutorial Scaffolding. <em>Proceedings of the International Conference on Artificial Intelligence in Education (AIED)</em>.</li>
+        <li>Huang, X., Borchers, C., <strong>Zhang, J.</strong>, &amp; Lajoie, S. P. (2026). Physiological and Semantic Patterns in Medical Teams Using an Intelligent Tutoring System. <em>Proceedings of the International Conference on Artificial Intelligence in Education (AIED)</em>.</li>
+        <li>Gao, J., <strong>Zhang, J.</strong>, &amp; Chen, D. (2026). To Use or Not to Use: Investigating Student Perceptions of Faculty Generative AI Usage in Higher Education. <em>Proceedings of the International Conference on Artificial Intelligence in Education (AIED)</em>.</li>
+        <li>Worden, E., Lee, M., Siedahmed, A., Sales, A., <strong>Zhang, J.</strong>, Shraga, R., &amp; Heffernan, N. (2026). Short, long, or affective: Evaluating LLM-generated feedback styles for student learning. <em>Proceedings of the International Conference on Artificial Intelligence in Education (AIED)</em>.</li>
+        <li>Deho, O., Baker, R., Smith, D., <strong>Zhang, J.</strong>, &amp; Woodhead, S. (2026). To what extent can early keystroke patterns predict knowledge gain in mathematics. <em>Proceedings of the International Conference on Educational Data Mining (EDM)</em>.</li>
+        <li>Worden, E., Dang, L., Lim, W. C., Miller, S., <strong>Zhang, J.</strong>, Haim, A., Sales, A., Gurung, A., &amp; Heffernan, N. (2026). A large-scale randomized controlled trial showing LLM-generated feedback helps low-knowledge middle school math students with short-term learning. <em>ACM Conference on Learning@Scale (L@S)</em>.</li>
+        <li>Lee, S., Zhang, S., <strong>Zhang, J.</strong>, Zambrano, A., Li, H., Adjei, S., Baker, R. S., &amp; Botelho, A. (2026). A Tale of Two Models: Leveraging Self-Explanation to Contextualize Divergent Models of Student Carelessness. OSF.</li>
+        <li>Wei, Z., <strong>Zhang, J.</strong>, Baker, R. S., Borchers, C., Barany, A., &amp; Liu, X. (2026). Scaffolding Human-LLM Qualitative Coding Through Inference Evaluation and Construct Boundaries. <em>Proceedings of the International Conference on Quantitative Ethnography (ICQE)</em>.</li>
+        <li><strong>Zhang, J.</strong>, Baker, R. S., Srivastava, N., Ocumpaugh, J., Mills, C., &amp; McLaren, B. M. (2025). Carelessness detection using performance factor analysis: A new operationalization with unexpectedly different relationship to learning. In <em>Proceedings of the International Conference on Computer Science and Technologies in Education</em>. <span class="award">Best Presentation</span></li>
+        <li><strong>Zhang, J.</strong>, Vanacore, K., Baker, R., Ch, N., Mills, C., &amp; Henkel, O. (2025). How much mastery is enough mastery? The relationship between mastery in a lesson and the performance on the subsequent lesson. In <em>Proceedings of the International Conference on Educational Data Mining (EDM)</em>.</li>
+        <li><strong>Zhang, J.</strong>, Baker, R. S., &amp; McLaren, B. M. (2025). LLM-Based Approaches for Detecting Gaming the System in Self-Explanation. In <em>Proceedings of the Artificial Intelligence in Measurement and Education Conference (AIME-Con)</em>.</li>
+        <li><strong>Zhang, J.</strong> (2025). Examining the Robustness of Large Language Models across Language Complexity. <em>American Educational Research Association (AERA)</em>.</li>
+        <li>Liu, X., Wei, Z., Baker, R. S., Metcalf, S. J., <strong>Zhang, J.</strong>, Barany, A., Slater, S., Swanson, L., &amp; Gagon, D. (2025). Integrating Large Language Models and Machine Learning to Detect Struggle in Educational Games. In <em>Proceedings of the International Conference on Artificial Intelligence in Education (AIED)</em>.</li>
+        <li>Liu, Y., Davidesco, I., McLaren, B., Richey, E., Xue, X., Teffera, L., Stec, H., <strong>Zhang, J.</strong>, Liu, X., &amp; Golumbic, E. (2025). Utilizing Log-based and Neurophysiological Measures to Understand Engagement and Learning with Intelligent Tutoring Systems. In <em>Proceedings of the International Conference on Artificial Intelligence in Education (AIED)</em>.</li>
+        <li>Moreau-Pernet, B., Vanacore, K., <strong>Zhang, J.</strong>, Baker, R., &amp; Henkel, O. (2025). Keeping Students in their Zone of Proximal Development: A Machine Learning Approach for Intelligent Tutoring Systems. OSF.</li>
+        <li><strong>Zhang, J.</strong>, Borchers, C., Aleven, V., &amp; Baker, R. S. (2024). Using large language models to detect self-regulated learning in think-aloud protocols. In <em>Proceedings of the International Conference on Educational Data Mining (EDM)</em>.</li>
+        <li><strong>Zhang, J.</strong>, Borchers, C., &amp; Barany, A. (2024). Studying the Interplay of Self-Regulated Learning Cycles and Scaffolding Through Ordered Network Analysis Across Three Tutoring Systems. In <em>Proceedings of the International Conference on Quantitative Ethnography (ICQE)</em>. <span class="award">Best Student Paper Award</span></li>
+        <li>Liu, X., <strong>Zhang, J.</strong>, Barany, A., Pankiewicz, M., &amp; Baker, R. S. (2024). Assessing the Potential and Limits of Large Language Models in Qualitative Coding. In <em>Proceedings of the International Conference on Quantitative Ethnography (ICQE)</em>.</li>
+        <li>Borchers, C., <strong>Zhang, J.</strong>, Baker, R. S., &amp; Aleven, V. (2024). Using Think-Aloud Data to Understand Relations between Self-Regulation Cycle Characteristics and Student Performance in Intelligent Tutoring Systems. In <em>Proceedings of the Learning Analytics and Knowledge Conference (LAK)</em>.</li>
+        <li>Zambrano, A. F., <strong>Zhang, J.</strong>, &amp; Baker, R. S. (2024). Investigating Algorithmic Bias on Bayesian Knowledge Tracing and Carelessness Detectors. In <em>Proceedings of the Learning Analytics and Knowledge Conference (LAK)</em>. <span class="award">Best Paper Nomination</span></li>
+        <li>Cloude, E. B., <strong>Zhang, J.</strong>, Baker, R. S., &amp; Fouh, E. (2024). Procrastination vs. Active Delay: How Students Prepare to Code in Introductory Programming. In <em>Proceedings of the ACM Technical Symposium on Computer Science Education</em>.</li>
+        <li>Švábenský, V., Pankiewicz, M., <strong>Zhang, J.</strong>, Cloude, E. B., Baker, R. S., &amp; Fouh, E. (2024). Comparison of Three Programming Error Measures for Explaining Variability in CS1 Grades. In <em>Proceedings of the Innovation and Technology in Computer Science Education</em>.</li>
+        <li>Borchers, C., Liu, X., Lee, H. H., &amp; <strong>Zhang, J.</strong> (2024). Ethical AIED and AIED Ethics: Toward Synergy Between AIED Research and Ethical Frameworks. In <em>Proceedings of the International Conference on Artificial Intelligence in Education (AIED)</em>.</li>
+        <li>Zambrano, A., Ocumpaugh, J., Nasiar, N., Goslen, A., <strong>Zhang, J.</strong>, Rowe, J., … &amp; Hutt, S. (2024). Says Who? How different ground truth measures of emotion impact student affective modeling. In <em>Proceedings of the International Conference on Educational Data Mining (EDM)</em>.</li>
+        <li>Barany, A., Nasiar, N., Porter, C., Zambrano, A. F., Andres, A. L., Bright, D., … &amp; Baker, R. S. (2024). ChatGPT for education research: Exploring the potential of large language models for qualitative codebook development. In <em>Proceedings of the International Conference on Artificial Intelligence in Education (AIED)</em>.</li>
+        <li><strong>Zhang, J.</strong>, Baker, R. S., Andres, J. A., Hutt, S., &amp; Sethuraman, S. (2023). Automated Multi-Dimensional Analysis of Peer Feedback in Middle School Mathematics. In <em>Proceedings of the International Society of the Learning Sciences (ISLS)</em>.</li>
+        <li><strong>Zhang, J.</strong>, Pang, S., Andres, J. A., Baker, R. S., Cloude, E., Anh, H., &amp; Nguyen, B. M. (2023). Leveraging Natural Language Processing to Detect Gaming the System in Open-ended Questions in a Math Digital Learning Game. Presented at the Annual Meeting of the Society for Text and Discourse.</li>
+        <li><strong>Zhang, J.</strong>, Baker, R. S., &amp; Farmer, T. (2023). No Benefit for High-Dosage Time Management Interventions in Online Courses. In <em>Proceedings of the ACM Conference on Learning@Scale</em>.</li>
+        <li>Nasiar, N., Baker, R. S., Zou, Y., <strong>Zhang, J.</strong>, &amp; Hutt, S. (2023). Modeling problem-solving strategy invention (PSSI) behavior in an online math environment. In <em>Proceedings of the International Conference on Artificial Intelligence in Education (AIED)</em>.</li>
+        <li>Goslen, A., Henderson, N., Rowe, J., <strong>Zhang, J.</strong>, Hutt, S., Ocumpaugh, J., … &amp; Lester, J. (2023). Enhancing Engagement Modeling in Game-Based Learning Environments with Student-Agent Discourse Analysis. In <em>Proceedings of the International Conference on Artificial Intelligence in Education (AIED)</em>.</li>
+        <li>Andres, J. M., Baker, R. S., Hutt, S. J., Mills, C., <strong>Zhang, J.</strong>, Rhodes, S., &amp; DePiro, A. (2023). Anxiety, achievement, and self-regulated learning in CueThink. In <em>Proceedings of the International Society of the Learning Sciences (ISLS)</em>.</li>
+        <li><strong>Zhang, J.</strong>, Andres, J. M. A. L., Hutt, S., Baker, R. S., Ocumpaugh, J., Mills, C., Brooks, J., Sethuraman, S., &amp; Young, T. (2022). Detecting SMART Model Cognitive Operations in Mathematical Problem-Solving Process. In <em>Proceedings of the International Conference on Educational Data Mining (EDM)</em>. <span class="award">Best Paper Nomination</span></li>
+        <li><strong>Zhang, J.</strong>, Hutt, S., Ocumpaugh, J., Henderson, N., Goslen, A., Rowe, J. P., … &amp; Lester, J. (2022). Investigating Student Interest and Engagement in Game-Based Learning Environments. In <em>Proceedings of the International Conference on Artificial Intelligence in Education (AIED)</em>.</li>
+        <li><strong>Zhang, J.</strong>, Cunningham, T., Iyer, R., Baker, R., &amp; Fouh, E. (2022). Exploring the Impact of Voluntary Practice and Procrastination in an Introductory Programming Course. In <em>Proceedings of the ACM Technical Symposium on Computer Science Education</em>.</li>
+        <li>Karumbaiah, S., <strong>Zhang, J.</strong>, Baker, R. S., Scruggs, R., Cade, W., Clements, M., &amp; Lin, S. (2022). Using Neural Network-Based Knowledge Tracing for a Learning System with Unreliable Skill Tags. In <em>Proceedings of the International Conference on Educational Data Mining (EDM)</em>.</li>
+        <li>Wu, M., <strong>Zhang, J.</strong>, &amp; Barany, A. (2022). Understanding Detectors for SMART Model Cognitive Operation in Mathematical Problem-Solving Process: An Epistemic Network Analysis. In <em>Proceedings of the International Conference on Quantitative Ethnography (ICQE)</em>.</li>
+        <li>He, M., Baker, R., Hutt, S., &amp; <strong>Zhang, J.</strong> (2022). A Less Overconservative Method for Reliability Estimation for Cohen’s Kappa.</li>
+        <li><strong>Zhang, J.</strong>, Das, R., Baker, R. S., &amp; Scruggs, R. (2021). Knowledge Tracing Models’ Predictive Performance when a Student Starts a Skill. In <em>Proceedings of the International Conference on Educational Data Mining (EDM)</em>. <span class="award">Runner-up, Best Poster Presentation</span></li>
+        <li>Richey, J. E., <strong>Zhang, J.</strong>, Das, R., Andres-Bray, J. M., Scruggs, R., Mogessie, M., … &amp; McLaren, B. M. (2021). Gaming and confrustion explain learning advantages for a math digital learning game. In <em>Proceedings of the International Conference on Artificial Intelligence in Education (AIED)</em>. <span class="award">Best Paper Nomination</span></li>
+      </ol>
+    </section>
+
+    <!-- TEACHING -->
+    <section class="view" data-view="teaching" aria-labelledby="h-teach" hidden>
+      <h1 id="h-teach">Teaching</h1>
+      <h2>Courses</h2>
+      <ul class="entries tight">
+        <li><span><strong>Co-instructor.</strong> EDUC 6195, Capstone Seminar: Learning Analytics. University of Pennsylvania.</span><span class="when">Jun–Aug 2026</span></li>
+        <li><span><strong>Co-instructor.</strong> EDUC 6191, Core Methods in Educational Data Mining. University of Pennsylvania.</span><span class="when">Sep–Dec 2024</span></li>
+        <li><span><strong>Guest lecturer.</strong> EDIS 8100, Teaching and Learning Analytics. University of Virginia.<br><span class="sub">Text-Based Analytics and Natural Language Processing</span></span><span class="when">Sep 2026</span></li>
+        <li><span><strong>Guest lecturer.</strong> CUIN 7397, Research in the Age of AI. University of Houston.<br><span class="sub">Applications of GenAI in Interacting with Scholarly Literature</span></span><span class="when">Sep 2026</span></li>
+        <li><span><strong>Guest lecturer.</strong> CS 565, User Modeling. Worcester Polytechnic Institute.<br><span class="sub">LLM for Student Modeling</span></span><span class="when">Nov 2025</span></li>
+        <li><span><strong>Guest lecturer.</strong> EDUC 6191, Core Methods in Educational Data Mining. University of Pennsylvania.<br><span class="sub">Bayesian Knowledge Tracing</span></span><span class="when">Oct 2023, 2025</span></li>
+        <li><span><strong>Teaching assistant.</strong> Introduction to Psychology. University of Pittsburgh.</span><span class="when">Sep–Dec 2014</span></li>
+      </ul>
+      <h2>Mentorship</h2>
+      <ul class="entries tight">
+        <li><span><strong>Mentor.</strong> Teachers College Alumni Mentorship Program, Teachers College, Columbia University</span><span class="when">2026–2027</span></li>
+        <li><span><strong>Mentor.</strong> Learning Analytics and Artificial Intelligence Capstone Project, University of Pennsylvania</span><span class="when">2026–2027</span></li>
+      </ul>
+    </section>
+
+    <!-- CV -->
+    <section class="view" data-view="cv" aria-labelledby="h-cv" hidden>
+      <h1 id="h-cv" class="sr-only">Curriculum Vitae</h1>
+      <p class="cv-link"><a href="files/CV_Jiayi_Zhang.pdf" download>Download CV (PDF)</a></p>
+      <object class="cv-embed" data="files/CV_Jiayi_Zhang.pdf#view=FitH" type="application/pdf" aria-label="Curriculum vitae (PDF)">
+        <p>This browser can’t show the PDF here. <a href="files/CV_Jiayi_Zhang.pdf">Open the CV in a new tab</a>.</p>
+      </object>
+    </section>
+
+  </main>
+</div>
+
+<script>
+(function () {
+  var views = ["about", "research", "publication", "teaching", "cv"];
+  var sections = document.querySelectorAll(".view");
+  var links = document.querySelectorAll("[data-nav]");
+  var first = true;
+
+  function current() {
+    var h = (location.hash || "").replace("#", "");
+    return views.indexOf(h) > -1 ? h : "about";
+  }
+  function render() {
+    var name = current();
+    sections.forEach(function (s) { s.hidden = s.getAttribute("data-view") !== name; });
+    links.forEach(function (a) {
+      if (a.getAttribute("data-nav") === name) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    });
+    var titles = { about: "Jiayi (Joyce) Zhang", research: "Research", publication: "Publications", teaching: "Teaching", cv: "CV" };
+    document.title = name === "about" ? "Jiayi (Joyce) Zhang" : titles[name] + " | Jiayi (Joyce) Zhang";
+    if (!first) window.scrollTo(0, 0);
+    first = false;
+  }
+  // Number the publication lists automatically (newest first: highest number on top)
+  document.querySelectorAll("ol.pubs").forEach(function (ol) {
+    var prefix = ol.classList.contains("journal") ? "J" : "C";
+    var items = ol.children;
+    for (var i = 0; i < items.length; i++) {
+      items[i].setAttribute("data-n", "[" + prefix + "." + (items.length - i) + "]");
+    }
+  });
+
+  window.addEventListener("hashchange", render);
+  render();
+})();
+</script>
+</body>
+</html>
