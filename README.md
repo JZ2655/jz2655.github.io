@@ -1,6 +1,6 @@
 # Personal website: Jiayi (Joyce) Zhang
 
-A plain static website (no build step, no frameworks). It replaces the old AcademicPages/Jekyll site at https://jz2655.github.io.
+A plain static website (no build step, no frameworks). It replaces the old AcademicPages/Jekyll site at https://jz2655.github.io and is now served at https://jiayijoycezhang.com.
 
 ```
 index.html                  the whole site (About, Research, Publication, Teaching, CV)
@@ -42,3 +42,14 @@ Tip: keep a copy of what you change in a text editor first if you're making seve
 - The CV page embeds the PDF. Some phone browsers only show the first page, so a **Download CV (PDF)** link is above it.
 - The site follows the visitor's dark or light mode setting.
 - A custom domain can be added later in **Settings > Pages > Custom domain**.
+
+## Getting found on Google
+
+Files that help search engines: `robots.txt`, `sitemap.xml`, and the name/description/structured data in the `<head>` of `index.html`. `CNAME` keeps your custom domain attached to GitHub Pages; never delete it.
+
+1. **Google Search Console** (https://search.google.com/search-console): Add property > **Domain** > `jiayijoycezhang.com`. Google shows a TXT record; add it in your DNS (Host blank, Type TXT) and click **Verify**.
+2. In Search Console open **Sitemaps** and submit `sitemap.xml`. Then use the top search bar (URL inspection) on `https://jiayijoycezhang.com/` and click **Request indexing**.
+3. **Link to the site from your other profiles** (this matters most): Google Scholar homepage field, LinkedIn contact info, ORCID websites, GitHub profile, and your WPI / ASSISTments / Penn pages.
+4. Use the same name form (Jiayi (Joyce) Zhang) everywhere, and keep the site updated.
+
+Results usually take days to a few weeks. Nobody can guarantee a #1 ranking.
